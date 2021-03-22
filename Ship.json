@@ -1,0 +1,164 @@
+{
+	"BEGIN": {
+		"name": "Welcome to 'ESCAPE FROM THE MERIDIAN', a text adventure game",
+		"desc": "In order to begin, type: START \nIf you ever need to quit the game, type: QUIT \nYou can pick up items in a room by typing: GET \nWhen you type GET an item will pop up, type the name in to pick it up",
+		"exits": [{
+			"exit": "START",
+			"target": "DECK"
+		}],
+		"items": []
+	},
+	"DECK": {
+		"name": "Deck",
+		"desc": "You are on the deck of the pirate ship 'The Meridian'. There is not a soul left on this forsaken vessel. Who knows where they all went?",
+		"exits": [{
+			"exit": "MAST",
+			"target": "MAST"
+		},{
+			"exit": "BOW",
+			"target": "BOW"
+		},{
+			"exit": "CROOM",
+			"target": "CROOM"
+		},{
+			"exit": "MAST",
+			"target": "MAST"
+		},{
+			"exit": "CANNONR",
+			"target": "CANNONR"
+		}],
+		"items": [{
+			"item": "BROKEN LIFEBOAT",
+			"desc": "A Boat left behind. It was not of use to them but may be yet of use to you",
+			"take": "You bring the boat on the deck of the ship. You should be able to access it whenever."
+		}]
+	},
+	"MAST": {
+		"name": "Crows Nest",
+		"desc": "You are atop the mast in the Crow's Nest. You can't make out much but around you but the sea.",
+		"exits": [{
+			"exit": "DECK",
+			"target": "DECK"
+		}],
+		"items": [{
+			"item": "SPYGLASS",
+			"desc": "A spyglass that will help you see great distances. Upon further inspection the lens is cracked. You will have to locate another one to use this",
+			"take": "You but it in your bag with hopes of finding the tools to repair it."
+		}]
+	},
+	"BOW": {
+		"name": "Bow of the ship",
+		"desc": "You are at the front of the ship, watching as the waves break against the wood. The ship appears to be traveling around in random directions",
+		"exits": [{
+			"exit": "DECK",
+			"target": "DECK"
+		}],
+		"items": []
+	},
+	"CROOM": {
+		"name": "Captians Quarters",
+		"desc": "These are where the Captian kept his personal affects and would sleep during the night. There are various trinkets and items lying about.",
+		"exits": [{
+			"exit": "DECK",
+			"target": "DECK"
+		}],
+		"items": [{
+			"item": "MYSTERIOUS KEY",
+			"desc": "A key seemingly abandoned. It has an old shine to it.",
+			"take": "You put the key in your pocket, but who knows if it will actually unlock anything"
+		}]
+	},
+	"HELM": {
+		"name": "HELM",
+		"desc": "You are on the back of the ship where the steering wheel is located. There are signs of a struggle all around but no trace of where they went",
+		"exits": [{
+			"exit": "DECK",
+			"target": "DECK"
+		}],
+		"items": []
+	},
+	"CREWR": {
+		"name": "CREW'S QUARTERS",
+		"desc": "You are below deck, where the crew slept. The place apears thourghly ransacked but you still may be able to find some things.",
+		"exits": [{
+			"exit": "DECK",
+			"target": "DECK"
+		},{
+			"exit": "CANNONR",
+			"target": "CANNONR"
+		}],
+		"items": [{
+			"item": "RUSTY KNIFE",
+			"desc": "A knife so dull and brittle it is throughly unsuited to combat",
+			"take": "You put the knife on your hip but if worse comes to worst you may somehow need it."
+		}]
+	},
+	"CANNONR": {
+		"name": "CANNON ROOM",
+		"desc": "You are bellow deck where the cannons should be kept for battle. Most appear broken or disassembled. It seems eerily quiet.",
+		"exits": [{
+			"exit": "DECK",
+			"target": "DECK"
+		},{
+			"exit": "CREWR",
+			"target": "CREWR"
+		},{
+			"exit": "MUNITIONSR",
+			"target": "MUNITIONSR"
+		},{
+			"exit": "PRISION",
+			"target": "PRISION"
+		}],
+		"items": []
+	},
+	"MUNITIONSR": {
+		"name": "MUNITIONS STORAGE ROOM",
+		"desc": "It appears you are where the storage for the ships munitions. There is nothing out of the ordinary here or so it seems.",
+		"exits": [{
+			"exit": "PRISION",
+			"target": "PRISION"
+		},{
+			"exit": "CANNONR",
+			"target": "CANNONR"
+		}],
+		"items": [{
+			"item": "USELESS CANNONBALL",
+			"desc": "A cannonball made out of iron. Weights heavy but with no gunpowder it wont do anything",
+			"take": "You put it in your bag but the only thing this will acomplish is take you to the bottom of the sea faster."
+		}]
+	},
+	"PRISION": {
+		"name": "PRISION ROOM",
+		"desc": "You have found the room where traitors and captured individuals were stored. The cells seem locked and inside you can see those who met and unfortunate end.",
+		"exits": [{
+			"exit": "CANNONR",
+			"target": "CANNONR"
+		},{
+			"exit": "MUNITIONSR",
+			"target": "MUNITIONSR"
+		}],
+		"items": [{
+			"item": "PLANK OF WOOD",
+			"desc": "A rotting plack of wood that someone in the cell must have peeled off in a futile attemp to escape",
+			"take": "You take it in hopes of repairing the ship, but deep down you know that it is too small and wont fix the gaping hole."
+		}]
+	},
+	"BOTTOM": {
+		"name": "BOTTOM OF THE SEA",
+		"desc": "You have drowned and met your fate.",
+		"exits": [{
+			"exit": "NONE, YOUR LIFE IS OVER",
+			"target": ""
+		}],
+		"items": []
+	},
+	"BREAK": {
+		"name": "THE SHIP IS BREAKING APART!",
+		"desc": "While you are moving about you hear the wood creak and splint. In an instant the water comes crashing in and you are taken away...",
+		"exits": [{
+			"exit": "NOWHERE, ONLY THE GODS KNOW WHERE YOU WILL END UP",
+			"target": "BOTTOM"
+		}],
+		"items": []
+	}
+}
